@@ -65,7 +65,7 @@ int main( int argc, char** argv )
 
                 for ( int i = size - 1; 0 <= i; --i )
                 {
-                    ms_arr[i] = ms.ms_allocate();
+                    ms_arr[i] = ms.ms_alloc();
                 }
 
                 for ( int i = size - 1; 0 <= i; --i )

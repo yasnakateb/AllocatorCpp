@@ -12,7 +12,7 @@ namespace msalloc
             void create_memory_space( uint32_t num_of_blocks );
             void delete_memory_space();
 
-            T* ms_allocate();
+            T* ms_alloc();
             void ms_free( void* address );
             
         private:
@@ -65,7 +65,7 @@ namespace msalloc
 
 
     template<typename T>
-    T* MemorySpace<T>::ms_allocate()
+    T* MemorySpace<T>::ms_alloc()
     {
         if ( number_of_initialized_blocks < number_of_blocks )
         {
