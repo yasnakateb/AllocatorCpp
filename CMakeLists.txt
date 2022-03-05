@@ -8,8 +8,7 @@ project(
 include_directories(include)
 
 file(GLOB Dir1_Sources "src/*.cpp")
-file(GLOB Dir2_Sources "test/*.cpp")
 
-add_executable(${PROJECT_NAME} ${Dir1_Sources} ${Dir2_Sources})
+add_executable(${PROJECT_NAME} ${Dir1_Sources} )
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)
